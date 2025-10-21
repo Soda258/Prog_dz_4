@@ -1,11 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, char** argv) {
+int main() {
 
+    double a[10];
     double sum = 0;
-    for(int i=1;i<=10;i++){sum += atoi(argv[i]);}
-    printf("%.2f",sum/10);
+    for(int i = 0; i < 10; i++){
+        scanf("%lf", &a[i]);
+        sum = sum + i;
+    }
+    printf("%.3f", sum/10);
 
     return 0;
 }

@@ -4,8 +4,8 @@
 int main(int argc, char** argv) {
 
     double sum = 0;
-    for(int i=1;i<=10;i++){sum += i;}
-    printf("%f",sum/10);
+    for(int i=1;i<=10;i++){sum += atoi(argv[i]);}
+    printf("%.2f",sum/10);
 
     return 0;
 }

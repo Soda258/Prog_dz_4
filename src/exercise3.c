@@ -13,8 +13,8 @@ int main(int argc, char** argv) {
     int j = k % 10;
     if(k > -1){
         for(int i = 0; i < 10; i++){
-            if(j<10){b[i]=a[i];}
-            else{b[i%10] = a[i];}
+            if(j<10){b[j]=a[i];}
+            else{b[j%10] = a[i];}
         j++;
         }
     }
@@ -23,8 +23,8 @@ int main(int argc, char** argv) {
         for(int i = 0; i < 10; i++){
             if(l < 10){b[l] = a[i];}
             else{b[l%10]=a[i];}
-        }
         l++;
+        }
     }
     for(int i = 0; i < 10; i++){printf("%.3f ", b[i]);}
 
